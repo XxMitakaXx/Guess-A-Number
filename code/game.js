@@ -80,6 +80,7 @@ enterNum.addEventListener('click', function () {
 let playAgain = document.getElementById('playAgain');
 
 playAgain.addEventListener('click', function () {
+	randomNum = Math.round(Math.random() * 100);
 	inputNum.value = '';
 	pointCounter.innerHTML = 20;
 	isWin = false;
